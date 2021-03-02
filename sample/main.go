@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	buffer, err := files.ReadFile("0123456789.png")
+	buffer, err := files.ReadFile("datamatrix.jpg")
 	if err != nil {
 		panic(err)
 	}
