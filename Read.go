@@ -16,7 +16,7 @@ func Read(buff []byte) (string, error) {
 	if errUUID != nil {
 		return "", errUUID
 	}
-	pathfile := fmt.Sprint(pathtempdir, "/", pathname, ".tmp")
+	pathfile := fmt.Sprint(pathtempdir, "/", pathname, ".jpg")
 	_, errWrite := files.WriteFile(pathfile, buff)
 	if errWrite != nil {
 		return "", errWrite
